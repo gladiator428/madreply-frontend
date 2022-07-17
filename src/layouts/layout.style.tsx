@@ -13,6 +13,7 @@ export interface Props {
   height?: number;
   textTransform?: string;
   bgColor?: string;
+  boxShadow?: string;
 }
 
 export const PageContainer = styled.div`
@@ -38,7 +39,11 @@ export const VeDivider = styled.div<Props>`
 
 export const LayoutContainer = styled.div<Props>`
   width: 100%;
-  box-shadow: 0 0px 6px rgb(61, 0, 0);
+  transition: 0.2s all;
+  background-color: ${({ bgColor }) =>
+    bgColor ? "transparent" : "rgb(147, 0, 0)"};
+  box-shadow: ${({ boxShadow }) =>
+    boxShadow ? "none" : "0 0px 6px rgb(3, 3, 3)"};
   ${({ fixed }) => fixed && "position: fixed;"}
   top: ${({ top }) => top};
   right: ${({ right }) => right};
@@ -53,7 +58,7 @@ export const AppLayoutWrapper = styled.div`
 
 export const AppContent = styled.div`
   min-height: calc(100vh - 91px - 149px);
-  margin: 91px 0 0 0;
+  /* margin: 91px 0 0 0; */
 `;
 
 export const OverLayout = styled.div<Props>`

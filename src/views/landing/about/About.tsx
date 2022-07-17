@@ -85,7 +85,7 @@ const AboutPart = () => {
           </SliderText>
         </AboutSliderDiv>
 
-        <MemberGroupDiv>
+        {/* <MemberGroupDiv>
           <GroupTitleDiv>
             <div className="main_title">Our Members</div>
             <div className="sub_title">
@@ -97,7 +97,7 @@ const AboutPart = () => {
             <MemberItem img={mem2.src} name="Kim Tan" />
             <MemberItem img={mem3.src} name="Haoming" />
           </MemberGroup>
-        </MemberGroupDiv>
+        </MemberGroupDiv> */}
       </PageContainer>
     </AboutPartDiv>
   );

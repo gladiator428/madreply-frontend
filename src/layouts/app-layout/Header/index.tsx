@@ -128,16 +128,23 @@ const Header = () => {
 
   return (
     <>
-      <LayoutContainer className="bg-layout" fixed top={0}>
+      <LayoutContainer
+        boxShadow="none"
+        bgColor="none"
+        className="bg-layout"
+        id="headerSection"
+        fixed
+        top={0}
+      >
         <PageContainer>
           <HeaderBar id="header">
             <Mark />
-            {!mobileView ? (
+            {/* {!mobileView ? (
               <MenuBar>
                 {menudata.map((item: any, key: any) => (
                   <MenuItem
                     key={key}
-                    onClick={() => handleMenuClick(item.path)}
+                     ={() => handleMenuClick(item.path)}
                   >
                     {item.title}
                   </MenuItem>
@@ -160,7 +167,7 @@ const Header = () => {
               <MenuBar>
                 <MenuButton onClick={handleToggleMenu} flag={menuShow} />
               </MenuBar>
-            )}
+            )} */}
           </HeaderBar>
         </PageContainer>
         {mobileView && (

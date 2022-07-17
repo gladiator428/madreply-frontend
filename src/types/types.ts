@@ -11,7 +11,7 @@ export interface MenuButtonProps {
 // ButtonProps
 export interface ButtonProps {
   label: any;
-  onClick: any;
+  onClick?: any;
 }
 
 // -------------------------------------//

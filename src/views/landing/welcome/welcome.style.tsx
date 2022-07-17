@@ -7,11 +7,11 @@ export const WelcomePartDiv = styled.div`
   /* background: url(${bg.src}) no-repeat; */
   background-attachment: fixed;
   background-size: cover;
-  min-height: calc(100vh - 91px);
+  min-height: 100vh;
   height: 100%;
   /* height: calc(100vh - 72px); */
   .mySwiper {
-    min-height: calc(100vh - 91px);
+    min-height: 100vh;
     --swiper-navigation-color: #fff;
     --swiper-pagination-color: "#fff";
   }
@@ -26,6 +26,7 @@ export const WelcomePartDiv = styled.div`
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
+    margin-top: 91px;
   }
 
   .parallax-bg {
@@ -148,8 +149,14 @@ export const Actions = styled.div`
   }
 `;
 
+export const WelcomeDescSection = styled.div`
+  background-color: rgb(147, 0, 0);
+
+`
+
 export const WelcomeDescPart = styled.div`
   padding: 70px 0;
+
   /* background-color: white; */
 `;
 

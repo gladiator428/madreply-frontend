@@ -1,8 +1,20 @@
 import React from "react";
-import { MarkDiv } from "./Mark.style";
+import Image from "next/image";
+import { LogoDiv, MarkDiv } from "./Mark.style";
 
-const Mark = ({ onClick }: any) => {
-  return <MarkDiv onClick={onClick}>Madreply</MarkDiv>;
+import whiteLogo from "assets/images/logos/white.png";
+import blackLogo from "assets/images/logos/black.png";
+
+const Mark = ({ onClick, mode }: any) => {
+  // return <MarkDiv onClick={onClick}>Madreply</MarkDiv>;
+  return (
+    <MarkDiv onClick={onClick}>
+      <LogoDiv>
+        <Image src={mode === "colored" ? blackLogo : whiteLogo} />
+      </LogoDiv>
+      Madreply
+    </MarkDiv>
+  );
 };
 
 export default Mark;

@@ -4,14 +4,19 @@ import { Props } from "layouts/layout.style";
 
 export const scrollEvent = () => {
   const scrollmove: any = document.getElementById("header");
+  const header: any = document.getElementById("headerSection");
   if (scrollmove) {
     if (
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
     ) {
       scrollmove.style.padding = "15px 0";
+      header.style.background = "rgb(147, 0, 0)";
+      header.style.boxShadow = "0 0px 6px rgb(3, 3, 3)";
     } else {
       scrollmove.style.padding = "25px 0";
+      header.style.background = "transparent";
+      header.style.boxShadow = "none";
     }
   }
 };
@@ -19,7 +24,7 @@ export const scrollEvent = () => {
 export const HeaderBar = styled.div`
   padding: 25px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: CENTER;
   align-items: center;
   transition: all 0.2s;
 

@@ -11,6 +11,7 @@ interface Props {
   onChange?: any;
   icon?: any;
   label?: string;
+  disabled?: boolean;
 }
 
 const InputDiv = styled.div`
@@ -25,6 +26,10 @@ const InputDiv = styled.div`
     font-size: 16px;
   }
   input {
+    :disabled {
+      border-color: #555;
+      color: #999;
+    }
     width: calc(100% - 40px);
     background: transparent;
     outline: none;
@@ -33,8 +38,8 @@ const InputDiv = styled.div`
     padding: 15px 20px;
     color: white;
     font-size: 16px;
+    transition: all 0.2s;
     :focus {
-      transition: all 0.5s;
       border-color: white;
       box-shadow: 0 0 10px #fff;
     }
@@ -68,6 +73,7 @@ const Input = (props: Props) => {
         value={props.value}
         name={props.name}
         id={props.id}
+        disabled={props.disabled}
       />
     </InputDiv>
   );

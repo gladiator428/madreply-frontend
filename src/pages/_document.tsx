@@ -50,6 +50,10 @@ export default class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

@@ -27,8 +27,8 @@ const ButtonDiv = styled.div`
   color: white;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s;
   :hover {
-    transition: all 0.2s;
     box-shadow: 0 0 10px #fff;
   }
 `;

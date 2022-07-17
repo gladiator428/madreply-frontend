@@ -11,6 +11,7 @@ import {
   WelcomeDescription,
   WelcomePartDiv,
   WelcomeText,
+  WelcomeDescSection,
 } from "./welcome.style";
 
 import SwiperCore, { Autoplay, Parallax, Pagination, Navigation } from "swiper";
@@ -102,34 +103,36 @@ const WelcomePart = () => {
           </SwiperSlide>
         </Swiper>
       </WelcomePartDiv>
-      <PageContainer>
-        <WelcomeDescription>
-          <WelcomeCard
-            icon={<HiLightBulb />}
-            color="#67C6FF"
-            title="Branding"
-            content="I’m a paragraph. Double click me or click Edit Text, it's easy."
-          />
-          <WelcomeCard
-            icon={<GoMegaphone />}
-            color="#EC457D"
-            title="Storytelling"
-            content="I’m a paragraph. Double click me or click Edit Text, it's easy."
-          />
-          <WelcomeCard
-            icon={<AiTwotoneEdit />}
-            color="#F7B403"
-            title="Design"
-            content="I’m a paragraph. Double click me or click Edit Text, it's easy."
-          />
-          <WelcomeCard
-            icon={<AiFillWechat />}
-            color="#4CC58E"
-            title="Consulting"
-            content="I’m a paragraph. Double click me or click Edit Text, it's easy."
-          />
-        </WelcomeDescription>
-      </PageContainer>
+      <WelcomeDescSection>
+        <PageContainer>
+          <WelcomeDescription>
+            <WelcomeCard
+              icon={<HiLightBulb />}
+              color="#67C6FF"
+              title="Branding"
+              content="I’m a paragraph. Double click me or click Edit Text, it's easy."
+            />
+            <WelcomeCard
+              icon={<GoMegaphone />}
+              color="#EC457D"
+              title="Storytelling"
+              content="I’m a paragraph. Double click me or click Edit Text, it's easy."
+            />
+            <WelcomeCard
+              icon={<AiTwotoneEdit />}
+              color="#F7B403"
+              title="Design"
+              content="I’m a paragraph. Double click me or click Edit Text, it's easy."
+            />
+            <WelcomeCard
+              icon={<AiFillWechat />}
+              color="#4CC58E"
+              title="Consulting"
+              content="I’m a paragraph. Double click me or click Edit Text, it's easy."
+            />
+          </WelcomeDescription>
+        </PageContainer>
+      </WelcomeDescSection>
     </React.Fragment>
   );
 };

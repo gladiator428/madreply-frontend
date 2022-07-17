@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgb(147, 0, 0);
+  /* background-color: rgb(147, 0, 0); */
 }
 
 ::-moz-selection {
@@ -23,7 +23,6 @@ html {
 }
 
 .bg-layout {
-  background-color: rgb(147, 0, 0);
   color: white;
 }
 

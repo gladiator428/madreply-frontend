@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import router from "next/router";
+import { useRouter } from "next/router";
 import Image from "next/image";
 // component
 import { ScrollTop } from "components/Button";
@@ -21,6 +21,7 @@ import bg from "assets/images/bg/bg.png";
 // -----------------------------------------------------------
 
 const Layout = ({ children }: any) => {
+  const router = useRouter();
   const [path, setPath] = useState("");
   useEffect(() => {
     setPath(router.route);
@@ -28,7 +29,7 @@ const Layout = ({ children }: any) => {
   return (
     // <Scrollbars style={{ width: "100vw", height: "100vh" }}>
     <AppLayoutWrapper>
-      {path === "/" ? (
+      {path === "/" || path.indexOf("/verify/") > -1 ? (
         <>
           <AppHeader />
           <AppContent>{children}</AppContent>

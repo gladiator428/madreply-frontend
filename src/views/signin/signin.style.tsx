@@ -64,6 +64,9 @@ export const AuthActionGroup = styled.div`
   display: flex;
   justify-content: space-between;
   color: white;
+  & > *:not(:last-child) {
+    margin-right: 10px;
+  }
   @media screen and (max-width: 425px) {
     flex-direction: column;
     & > *:not(:first-child) {
